@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Submission Form</title>
+    <style>
+        /* Styles for form elements */
+    </style>
+</head>
+<body>
+
+<h2>Blog Post Submission Form</h2>
+
+<form action="submit_post.php" method="post">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br>
+    
+    <label for="author">Author's Name:</label><br>
+    <input type="text" id="author" name="author"><br>
+    
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content"></textarea><br>
+    
+    <label for="category">Category:</label><br>
+    <select id="category" name="category">
+        <option value="Technology">Technology</option>
+        <option value="Travel">Travel</option>
+        <option value="Food">Food</option>
+        <!-- Add more categories -->
+    </select><br>
+    
+    <input type="submit" value="Submit">
+    <button type="button" onclick="alert('Form submitted!')">Show Alert</button>
+</form>
+
+</body>
+</html>
